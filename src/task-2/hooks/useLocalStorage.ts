@@ -7,14 +7,18 @@ export const useLocalStorage: UseLocalStorage = (key) => {
   const setItem = (newValue: string) => {
     setValue(newValue);
     return localStorage.setItem(key, newValue);
-  }
+  };
 
   const removeItem = () => {
     setValue('');
     localStorage.removeItem(key);
   };
 
-    return [value, {
-      setItem, removeItem
-    }]
-}
+  return [
+    value,
+    {
+      setItem,
+      removeItem,
+    },
+  ];
+};

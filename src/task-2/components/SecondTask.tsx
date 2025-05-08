@@ -15,4 +15,4 @@ const Demo = () => {
   );
 };
 
-export {Demo as SecondTask};
+export { Demo as SecondTask };

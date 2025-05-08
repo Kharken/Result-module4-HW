@@ -1,3 +1,3 @@
-import {FirstTask} from './components';
+import { FirstTask } from './components';
 
-export {FirstTask};
+export { FirstTask };

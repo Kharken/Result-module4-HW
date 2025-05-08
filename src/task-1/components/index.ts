@@ -1,4 +1,3 @@
+import { FirstTask } from './First-Task';
 
-import {FirstTask} from "./First-Task";
-
-export {FirstTask};
+export { FirstTask };

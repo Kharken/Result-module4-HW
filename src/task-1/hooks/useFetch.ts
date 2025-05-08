@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {Data, FetchResult, LoadingError, RefetchParams} from '../types/types';
+import { Data, FetchResult, LoadingError, RefetchParams } from '../types/types';
 
 export const useFetch = (baseUrl: string): FetchResult => {
   const [isLoading, setIsLoading] = useState(true);
@@ -9,8 +9,8 @@ export const useFetch = (baseUrl: string): FetchResult => {
   const emptyParams: RefetchParams = {
     params: {
       _limit: -1,
-    }
-  }
+    },
+  };
 
   const buildUrl = (params: RefetchParams): string => {
     const url = new URL(baseUrl);
@@ -23,24 +23,23 @@ export const useFetch = (baseUrl: string): FetchResult => {
   };
 
   const refetch = async (params: RefetchParams) => {
-    try{
+    try {
       const url = buildUrl(params);
-      const response = await fetch(url)
+      const response = await fetch(url);
       const data = await response.json();
       setData(data);
       setIsLoading(false);
     } catch (error) {
-      if (error instanceof Error){
+      if (error instanceof Error) {
         setError(error);
       }
       setError(null);
     }
-  }
+  };
 
   useEffect(() => {
-      void refetch(emptyParams);
-    },
-    []);
+    void refetch(emptyParams);
+  }, []);
 
   return { isLoading, data, error, refetch };
 };
