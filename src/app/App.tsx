@@ -1,6 +1,7 @@
-import { SecondTask } from '../task-2';
-import { FirstTask } from '../task-1';
-import { ThirdTask } from '../task-3';
+import { SecondTask } from '../components/task-2';
+import { FirstTask } from '../components/task-1';
+import { ThirdTask } from '../components/task-3';
+import { FourthTask } from '../components/task-4';
 
 export const App = () => {
   return (
@@ -16,6 +17,10 @@ export const App = () => {
       <h2>Task 3</h2>
       <hr />
       <ThirdTask />
+      <hr />
+      <h2>Task 4</h2>
+      <hr />
+      <FourthTask />
       <hr />
     </>
   );
