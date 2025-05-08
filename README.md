@@ -9,6 +9,7 @@
 * General - this project shows solution of tasks of 'React hooks' module
 * Project objectives:
   * task-1: creation of custom hook 'useFetch', which returns data from fetch API, loading status, error and special function 'refetch'
+  * task-2: creation of custom hook 'useLocalStorage', which adds and returns 'key-value' pair from LocalStorage
 
 ### Install
 

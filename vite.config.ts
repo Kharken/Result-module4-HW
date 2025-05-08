@@ -12,6 +12,8 @@ export default defineConfig({
       '@app/*': path.resolve(__dirname, './src/app/*'),
       '@task-1': path.resolve(__dirname, './src/app/task-1'),
       '@task-1/*': path.resolve(__dirname, './src/app/task-1/*'),
+      '@task-2': path.resolve(__dirname, './src/app/task-2'),
+      '@task-2/*': path.resolve(__dirname, './src/app/task-2/*'),
     },
   },
 });
