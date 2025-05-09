@@ -13,6 +13,7 @@
   *  task-3: creation of custom hook 'useHover', which provides toggling of chosen ref-element textContent
   * task-4: creation of custom hook 'useViewPortSize', which provides tracking of viewport size
   * additional task 1: creation of custom hook 'useWindowScroll', which provides tracking of scroll coordinates
+  * additional task 2: creation of custom hook 'useToggle', which provides toggle value on button click
 
 ### Install
 

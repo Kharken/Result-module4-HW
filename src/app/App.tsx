@@ -3,6 +3,7 @@ import { FirstTask } from '../components/task-1';
 import { ThirdTask } from '../components/task-3';
 import { FourthTask } from '../components/task-4';
 import { AddFirstTask } from '../components/add-task-1';
+import { AddSecondTask } from '../components/add-task-2';
 
 export const App = () => {
   return (
@@ -26,6 +27,10 @@ export const App = () => {
       <h2>Additional Task 1</h2>
       <hr />
       <AddFirstTask />
+      <hr />
+      <h2>Additional Task 2</h2>
+      <hr />
+      <AddSecondTask />
       <hr />
     </>
   );
